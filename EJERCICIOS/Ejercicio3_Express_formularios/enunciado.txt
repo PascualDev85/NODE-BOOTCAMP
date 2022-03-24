@@ -1,0 +1,12 @@
+1. Crear Servidor con express
+    - Con un método get ('/home/X/X/X') -> QUE RECOJA DE LA URL 3 VARIABLES (parámetros dinámicos) : casa, metros, habitaciones
+    - Con otro método get ('/inquilinos/X/X') -> QUE RECOJA DE LA URL 2 VARIABLES (parámetros dinámicos) :numero de inquilinos,precio del alquiler
+
+
+2. Que en la segunda ruta(inquilinos) envie como respuesta las variables que recojo de los parametros de la url res.send(variable). Utilizar también la interpolación de las variables en un string.
+
+3.  - Crear una carpeta llamada HTML en la raíz del proyecto y dentro un archivo formulario.html
+    - Crear una carpeta public con una carpeta css dentro y dentro un style.css que cambie el background-color del formulario (que no sea blanco).
+    - Crear una ruta get que nos muestre el html del formulario.
+    - El formulario ha de tener un input de tipo text (calle), un input de tipo number (número) y un select con tres options (provincia). 
+    - Crear una ruta post que recoja los datos del formulario y los muestre por consola. Esta ruta debe enviar una respuesta que diga "su pedido se ha completado correctamente"

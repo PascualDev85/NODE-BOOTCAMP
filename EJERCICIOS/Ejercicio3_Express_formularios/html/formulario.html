@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form action="/formulario" method="post">
+      <label for="calle">Calle: </label>
+      <input type="text" name="adress" id="calle" /><br /><br />
+      <label for="numero">Numero: </label>
+      <input type="number" name="number" id="numero" /><br /><br />
+      <select for="provincias" name="province">
+        <option value="Badajoz">Badajoz</option>
+        <option value="Cádiz">Cádiz</option>
+        <option value="Sevilla">Sevilla</option></select
+      ><br /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+CÓMO CREAR UN SERVIDOR CON EXPRESS-GENERATOR
+
+1.- Instalamos express-generator de manera global (sólo una vez por pc). A no
+ser que haya más usuarios. Ya no si tiene que volver a instalar.
+
+2.- Generar un nuevo proyecto nos movemos en el cmd/símbolo de sistema a la
+ubicación en la cual queremos generarlo. Puedes copiar el path desde visual.
+
+3.- Generamos un nuevo protecto/servidor con el comando $
+express --view=ejs nombre_del_proyecto que. Utilizar el cmd porque la terminal 
+de visual puede dar errores.
+
+4.- Abrimos el protecto generado con visual o nos movemos a esa carpeta desde la
+terminal.
+
+5.- Ejecutamos el comando npm install.
+
+6.- Instalamos las librerías necesarias como por ej: nodemon, npm install nodemon
+
+7.- Modificamos el script que ya nos viene formado en el package.json, para que
+ponga nodemon en lugar de node.
+
+8.- Levantamos el servidor con el comando npm star.

@@ -1,0 +1,114 @@
+COMO CREAR UN SERVIDOR CON EXPRESS
+
+1.- Nos cramos una carpeta que va a contener a nuestro servidor con todos los 
+archivos asociados.
+
+2.- Creamos el que será nuestro archivo principal, puede llamarse index.js o 
+app.js.
+
+3.- Abrimos la terminal y accdemos a la carpeta de nuestro proyecto, la que 
+contendrá el servidor.
+
+4.- Ejecutamos el comando $ nmp init para inciar en este proyecto y generar 
+un archivo package.json automáticamente.
+
+5.- Al ejecutar ese comando, nos hará unas serie de prguntas sobre c
+configuración y detalles del proyecto. Podemos completar o dejar lo que nos 
+viene por defecto.
+
+6.- Si queremos ir más rápido y no tenemos la intención de contestar esas
+preguntas por el momento, podríamos utilizar el comando $ npm init -y.
+
+EL npm init o nmp init -y SOLO SE EJECUTA UNA VEZ POR PROYECTO.
+
+7.- Instalamos express con el comando $ "página de exprees o npm o npm install
+express --save" y se genera carpeta node_module y package-lock.json, y en 
+package.json se han añadido dependencias en este caso exprees y versión.
+
+8.- Creamos un arhivo a la altura del proyecto (raiz) .gitignore y ponemos dentro 
+de ese arhivo el nombre de la carpeta /node_module para que Git lo ignore en 
+las copias de seguridad y no nos suba a githube (pesan mucho).
+
+9.- Ejecutamos en la terminal $ nmp install o $ npm i que termine de instalar 
+todas las dependencias que vienen con exprres y todas las que haya en el 
+package.json o cuando clonemos el proyecto.
+Hay que hacerlo en cada uno de ellos en su ruta, ESTO SUPER IMPORTANTE.
+
+10.- Me voy a la pág de Exprees y copio el código que hay en la pestaña Hello 
+World.
+
+11.- Lo pengo en index.js- Levanto el servidor.
+
+12.- Instalamos node mon(levanta y tira el servidor cuando hacemos cambios) en cada uno de nuestros proyectos de npm. Con el comando $ npm install --save-dev nodemon. 
+Y nos vamos a nuestro package.json y en scripts poenemos este comando
+"start": "nodemon index.js"
+
+14.- Nos vamos a la carpeta raiz donde tenemos el index.js en la terminal y 
+ejecutamos el siguiente comando para levantar el servidor: $ npm start. Y mos
+aseguramos que funciona.
+
+15.- Para enviar como respuesta un arhivo html, tenemos que utilizar el método
+sendFile al cual le pasamos como párametro del archivo que queremos enviar
+(utilizamos el __dirname + 'nombre_del_archivo').
+
+16.- Para vincular un archivo css, en nuestro index.js tenemos que utilizar el 
+método statica de express para indicar a Node que existe una carpeta de archivos
+estáticos. Estos archivos suelen estar en una carpeta llamada public.
+
+17.- En los htmls, cuando vinculamos el css, partimos de la carpeta public.
+Ej:  <link rel="stylesheet" href="/css/nosotros.css" />
+
+18.- Si queremos utilizar una etiqueta de enlace (a) para acceder a otro html, 
+en el atributo href tendremos que poner la ruta del método corresopondiente.
+Ej:   <button><a href="/sobre_nosotros">Sobre Nosotros</a></button>
+
+19.- Para introducir método con la ruta dinámica tenemos que poner después del 
+/ dos puntos (:), de esta forma declaramos un parámetro dinámico. Si queremos
+más parámetros tenemos que poner "/:" para seguir declarando.
+
+20.- Para capturar esos parámetros dinámicos tenemos que acceder al objeto
+request y a la propiedad params.
+
+21.- Para recoger datos de un formulario necesitamos:
+    - Un formulario con etiqueta form en un html.
+    - La etiqueta form debe llevar un atributo action en el que pondremos la 
+    ruta que se debe ejecutar cuando le demos al botón enviar.
+    - La etiqueta form debe llevar otro atributo llamado method en el que 
+    indicamos qué tipo de método vamos a utilizar (post).
+    -Los inputs de los formularios deben llevar un atributo name en el que 
+    indicamos con qué nombre recogeremos la información 
+    cuando llegue al back.
+    - Cada formulario, ha de llevar un botón de tipo submit, o un input de tipo
+    submit.
+    - Tenemos que crear una ruta post que recogerá los datos del formulario.
+    - Los datos del formulario se recogen del req.body.
+    - Para poder recoger los datos del formulario, tenemos que utilizar la 
+    librería bodyParser o directamente express.
+
+22.- Debemos crear diferentes archivos de rutas para organizar y distribuir 
+nuestras rutas.
+
+23.- Creamos una carpeta llamada routes en la cual necesitamos mínimo tres 
+líneas de código:
+    const express = require('express');
+    const router = express.Router();
+    module.exports = router;
+
+    Ya no utilizamos la constante app con la que instanciábamos express porque
+    en estos archivos de rutas sólo necesitamos unos de los métodos de express 
+    que es el método Router, y sólo es este el que instanciamos.
+    Es obligatorio exportar esta constante router para poder requerir toda la
+    información que contiene en el arhivo principal (index.js o app.js).
+
+24.- En el arhivo principal tenemos que requerir los diferentes arhivos de rutas
+y guardarlos en constantes.
+
+25.- En el arhivo principal tenemos que establecer una ruta base de acceso a 
+cada uno de nustros archivos de rutas, por ejemplo:
+    //localhost:3000/users
+    app.use('/users', usersRouter);
+
+
+
+
+

@@ -1,0 +1,317 @@
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.gris {
+  color: grey;
+}
+
+header {
+  height: 80vw;
+  background-image: url("/images/pretty/bg_1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div {
+  width: 20vw;
+  text-align: center;
+  color: white;
+}
+header img {
+  width: 60%;
+}
+button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 23px;
+  padding: 20px;
+}
+button:hover {
+  color: black;
+  background-color: white;
+}
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 7vw;
+}
+.services div {
+  width: 30vw;
+  text-align: center;
+  padding: 2vw;
+}
+.services img {
+  width: 5vw;
+}
+.experts {
+  background-color: RGB(249, 249, 249);
+  padding: 3vw;
+  text-align: center;
+}
+.experts_father {
+  display: flex;
+}
+.experts_son {
+  display: flex;
+}
+.experts_son div {
+  background-color: white;
+  margin: 1vw;
+  padding: 2vw;
+}
+.experts_son img {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+}
+/* SECCION DESCUENTOS */
+.discount {
+  background-image: url("/images/pretty/bg_2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: right;
+  padding: 10vw 3vw;
+}
+.discount div {
+  width: 25%;
+}
+.discount .student_discount {
+  font-size: 32px;
+}
+.discount .description_discount {
+  text-align: justify;
+  line-height: 25px;
+  font-weight: 100;
+}
+.our_work {
+  text-align: center;
+  padding: 3vw;
+}
+.our_work div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1vw;
+}
+.our_work img {
+  width: 25vw;
+}
+.partner {
+  display: flex;
+  justify-content: center;
+
+  background-color: RGB(250, 250, 250);
+}
+.partner div {
+  display: flex;
+}
+.partner img {
+  width: 23vw;
+  filter: opacity(0.5);
+  mix-blend-mode: multiply;
+}
+.price {
+  text-align: center;
+}
+.price_father {
+  display: flex;
+  justify-content: center;
+}
+.price_son {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+}
+.price_son table {
+  border: 1px solid #f2f2f2;
+  width: 90%;
+  margin: 5%;
+  border-collapse: collapse;
+}
+.price_son table:hover {
+  outline-width: 4px;
+  outline-color: magenta;
+  outline-style: solid;
+  outline-offset: 5px;
+}
+.price_son table td,
+th {
+  padding: 15px;
+}
+table span {
+  color: magenta;
+}
+/* .table_bg {
+  background-color: rgb(158, 158, 158);
+} */
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+footer {
+  background-color: magenta;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 7vw 0;
+}
+footer .left {
+  width: 35vw;
+  background-color: RGB(251, 108, 224);
+  border-radius: 25px;
+  box-shadow: 0 0 10px 1px white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  /* align-items: center; */
+}
+footer .right {
+  width: 35vw;
+}
+.bold {
+  font-weight: bold;
+}
+.flex_container {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+  width: 100%;
+}
+.margin {
+  margin-bottom: 30px;
+}
+.margen_derecho {
+  margin-right: 15px;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-right: 10px;
+  width: 100%;
+}
+textarea {
+}
+
+/* Esta media query nos sirve para hacer el responsive MOVIL */
+
+@media (max-width: 450px) {
+  header div {
+    width: 80vw;
+  }
+  header {
+    height: 80vh;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .services div {
+    width: 100%;
+  }
+  .services img {
+    width: 20%;
+  }
+  .experts_father {
+    flex-direction: column;
+  }
+  .experts_son {
+    flex-direction: column;
+  }
+  .experts_son div {
+    padding: 5vw;
+    margin-bottom: 3vw;
+  }
+  .experts_son img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .discount div {
+    width: 85%;
+  }
+  .discount {
+    justify-content: center;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.514))
+      ),
+      url("./images/bg_2.jpg");
+  }
+  .our_work div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .our_work img {
+    width: 70vw;
+    margin: 3vw 0;
+  }
+  .partner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .partner div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .partner img {
+    width: 70vw;
+  }
+  .price_father {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price_son {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .price_son table {
+    margin: 10%;
+    border: 1px solid magenta;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  footer .left,
+  footer .right {
+    width: 80vw;
+    margin-bottom: 30px;
+  }
+}
+
+/* Esta media query nos sirve para hacer el responsive TABLET */
+@media (min-width: 451px) AND (max-width: 850px) {
+  header div {
+    width: 50vw;
+  }
+  .experts_father {
+    flex-direction: column;
+  }
+  .experts_son img {
+    width: 11vw;
+    height: 11vw;
+  }
+  .price_father {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price_son {
+    width: 100%;
+  }
+}

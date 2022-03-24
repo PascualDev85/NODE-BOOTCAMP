@@ -1,0 +1,12 @@
+1.Crear un proyecto con Express con las 2 librerias que estamos utilizando hasta ahora
+    2.- El archivo js principal, que ejecutará nodemon se llamará app.js
+    3.Crear 4 rutas principales(4 archivos de ruta) distinta :
+                                            - Index
+                                            - City
+                                            - User
+                                            - Technology
+    4. Que:
+            -En index.js ha de haber una ruta muestre el Pretty.html que hicimos con su css. Otra ruta que envíe un mensaje como respuesta.
+            -En city.js ha de haber una ruta que muestre el forty.html que hicimos con su css. Otra ruta que envíe un mensaje.
+            -En user.js ha de haber una ruta que muestre un formulario con 5 inputs: nombre, apellido, edad, altura, trabajo. Otra ruta que recoja los datos del formulario y los muestre por pantalla.
+            -En technology.js ha de haber una ruta dinámica que recoja tres parámetros dinámicos y los interpole en la respuesta.

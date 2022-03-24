@@ -1,0 +1,220 @@
+body {
+  color: white;
+}
+
+header {
+  background-color: RGB(35, 41, 67);
+  position: fixed;
+  width: 100%;
+  height: 50px;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div p {
+  margin-bottom: 0;
+}
+
+header div p span {
+  color: RGB(35, 41, 67);
+  background-color: white;
+  font-weight: bold;
+}
+
+header div button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-width: 1px;
+}
+
+hr {
+  background-color: white;
+  border: none;
+  height: 2px !important;
+  opacity: 1;
+}
+
+.seccion1 {
+  background-color: RGB(35, 41, 67);
+}
+
+.seccion1 div {
+  padding: 12vw 8vw 8vw 8vw;
+}
+
+.seccion1 div h1,
+.seccion1 div p {
+  padding-left: 0;
+}
+
+.seccion1 div button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.seccion2 div {
+  padding: 8vw;
+}
+
+.seccion2 .aliquam {
+  background-color: RGB(111, 195, 223);
+}
+
+.seccion2 .tempus {
+  background-color: RGB(141, 130, 196);
+}
+
+.seccion3 div {
+  padding: 8vw;
+}
+
+.seccion3 .magna {
+  background-color: RGB(235, 141, 129);
+}
+
+.seccion3 .ipsum {
+  background-color: RGB(231, 183, 135);
+}
+
+.seccion4 div {
+  padding: 8vw;
+}
+
+.seccion4 .consequat {
+  background-color: RGB(141, 169, 232);
+}
+
+.seccion4 .etiam {
+  background-color: RGB(136, 197, 164);
+}
+
+footer {
+  padding: 5vw;
+  background-color: RGB(35, 41, 67);
+}
+
+footer div button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+footer .form {
+  margin-bottom: 30px;
+}
+
+footer .form hr {
+  width: 45%;
+}
+
+footer .form_input div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .form_input div input {
+  width: 48%;
+  margin-bottom: 15px;
+}
+
+footer .form_input input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+footer .form_input .boton_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .form_input .boton_form button {
+  margin-right: 5px;
+}
+
+footer .mail p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 575px) {
+  .mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */

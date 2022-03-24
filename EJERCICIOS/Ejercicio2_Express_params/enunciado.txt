@@ -1,0 +1,9 @@
+Crear un servidor con express desde 0
+
+Crear tres rutas en el index.
+La primera ruta va a mostrar como respuesta un html con algún estilo aplicado 
+con css.
+La segunda ruta va a ser dinámica con dos parámetros dinámicos, que se van a 
+interpolar en la respuesta.
+La tercera ruta va a enviar como respuesta y ese html va a contener una etiqueta
+de enlace que cuando la pulsemos se ejecute la segunda ruta.
